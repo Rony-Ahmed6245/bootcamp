@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bootcamp Assignment 02</title>
+  <link rel="stylesheet" href="/style2.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.1/dist/full.min.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body class="max-w-screen-lg mx-auto">
+  <!-- navbar related -->
+  <nav class="navbar p-6 bg-[#FFF]">
+    <div class="navbar-start">
+      <div class="dropdown">
+        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+          </svg>
+        </div>
+        <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-[#FFF] rounded-box w-52">
+          <li><a>Books</a></li>
+          <li><a>Course</a></li>
+          <li><a>Others</a></li>
+          <li><a>Blogs</a></li>
+          <button class="rounded-full btn-sm  text-white bg-green-400">
+            Sign Out
+          </button>
+        </ul>
+      </div>
+      <a href="/index.html"><img class="w-44" src="./images//logo.png" alt="logo" /></a>
+    </div>
+    <div class="navbar-end hidden lg:flex">
+      <ul class="menu menu-horizontal px-1">
+        <ul class="menu menu-horizontal items-center text-black gap-2 font-bold px-1">
+          <li><a>Books</a></li>
+          <li><a>Course</a></li>
+          <li><a>Others</a></li>
+          <li><a>Blogs</a></li>
+          <button class="rounded-full btn-sm text-white bg-green-400">
+            Sign Out
+          </button>
+        </ul>
+      </ul>
+    </div>
+  </nav>
+
+  <h1 class="font-bold text-4xl text-[#413960] mt-4">All Courses</h1>
+  <!-- Card Section -->
+  <section class="flex gap-[20px]">
+    <div id="parent" class="flex flex-col  gap-4 mb-4">
+      <!-- append js card -->
+    </div>
+
+
+
+    <section class="flex gap-[20px]">
+      <div id="parent" class="flex flex-col gap-4 mb-4">
+        <!-- Course cards will be dynamically generated here based on data -->
+      </div>
+      <div class="p-4">
+        <div id="menu-container" class="">
+          <!-- dynamic card added in this  -->
+
+        </div>
+        <hr>
+        <div class=" flex justify-between">
+          <div>
+            <p>Total Amount: <span id="total-amount">00 TK</span></p>
+            <h1 class="font-semibold">Items: <span id="subtotal-info">0 Items</span></h1>
+          </div>
+        </div>
+      </div>
+    </section>
+  </section>
+
+
+
+
+
+
+  <!-- Footer Part -->
+  <footer class="footer mt-11 p-10 bg-[#282531] text-white">
+    <aside class="my-4">
+      <img class="w-32" src="./images/logo.png" alt="" />
+      <p class="mt-6">
+        Millions of people of all ages and from around <br />
+        the world are improving their lives with us
+      </p>
+    </aside>
+    <nav>
+      <h6 class="footer-title">Course</h6>
+      <a class="link link-hover">Graphic Design</a>
+      <a class="link link-hover">Web Design</a>
+      <a class="link link-hover">Business</a>
+      <a class="link link-hover">Marketing</a>
+    </nav>
+    <nav>
+      <h6 class="footer-title">Terms</h6>
+      <a class="link link-hover">About us</a>
+      <a class="link link-hover">Contact</a>
+      <a class="link link-hover">Jobs</a>
+      <a class="link link-hover">Press kit</a>
+    </nav>
+    <nav>
+      <h6 class="footer-title">Useful Link</h6>
+      <a class="link link-hover">Terms of use</a>
+      <a class="link link-hover">Privacy policy</a>
+      <a class="link link-hover">Cookie policy</a>
+    </nav>
+  </footer>
+
+  <aside>
+    <p class="text-center text-white pb-4 bg-[#282531]">
+      Copyright © 2024 21daysofcode.com
+    </p>
+  </aside>
+  <script src="./index.js"></script>
+</body>
+
+</html>
